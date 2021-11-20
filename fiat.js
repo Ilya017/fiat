@@ -29,12 +29,13 @@ let fiat = {
     alert("У меня в баке " + this.fuel + " литров бензина!");
   },
   addFuel: function (amount) {
+    amount = prompt("Введите кол-во бензина")
     this.fuel += amount;
   },
 };
 fiat.showFuel();
-// let n = prompt("Введите к")
-fiat.addFuel(5);
+let n;
+fiat.addFuel(n);
 fiat.showFuel();
 fiat.start();
 fiat.drive();
