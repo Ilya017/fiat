@@ -33,14 +33,11 @@ let fiat = {
     this.fuel += amount;
   },
 };
+while(this.fuel < 0) {
 fiat.showFuel();
 let n;
 fiat.addFuel(n);
 fiat.showFuel();
 fiat.start();
 fiat.drive();
-fiat.showFuel();
-fiat.drive();
-fiat.showFuel();
-fiat.drive();
-fiat.showFuel();
+}
