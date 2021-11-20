@@ -32,11 +32,13 @@ let fiat = {
     alert("У меня в баке " + this.fuel + " литров бензина!");
   },
   addFuel: function (amount) {
+    amount = prompt("Введите кол-во бензина");
     this.fuel += amount;
   },
 };
+let k = 0;
 fiat.showFuel();
-fiat.addFuel(5);
+fiat.addFuel(k);
 fiat.showFuel();
 fiat.start();
 let n = prompt("Сколько поездок вы хотите проехать?")
