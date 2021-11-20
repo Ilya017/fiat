@@ -17,6 +17,7 @@ let fiat = {
     if (this.fuel <= 0) {
       alert("!!!");
       this.started = false;
+      this.fuel = 0;
     }
     if (this.started) {
       alert("Бип!");
