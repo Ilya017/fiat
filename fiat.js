@@ -17,7 +17,6 @@ let fiat = {
     if (this.fuel <= 0) {
       alert("!!!");
       this.started = false;
-      this.fuel = 0;
     }
     if (this.started) {
       alert("Бип!");
@@ -30,13 +29,17 @@ let fiat = {
     alert("У меня в баке " + this.fuel + " литров бензина!");
   },
   addFuel: function (amount) {
-    amount = prompt("Введите кол-во бензина")
     this.fuel += amount;
   },
 };
+
 fiat.showFuel();
-let n;
-fiat.addFuel(n);
+fiat.addFuel(5);
 fiat.showFuel();
 fiat.start();
 fiat.drive();
+fiat.showFuel();
+fiat.drive();
+fiat.showFuel();
+fiat.drive();
+fiat.showFuel();
