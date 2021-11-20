@@ -39,9 +39,8 @@ fiat.showFuel();
 fiat.addFuel(5);
 fiat.showFuel();
 fiat.start();
+let n = prompt("Сколько поездок вы хотите проехать?")
+for (i = 0; i < n; i++) {
 fiat.drive();
 fiat.showFuel();
-fiat.drive();
-fiat.showFuel();
-fiat.drive();
-fiat.showFuel();
+}
