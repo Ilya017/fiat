@@ -20,7 +20,7 @@ let fiat = {
     }
     if (this.started) {
       alert("Бип!");
-      this.fuel -= 25;
+      this.fuel -= 2;
     } else {
       alert("Сначала запустите двигатель!");
     }
@@ -33,8 +33,8 @@ let fiat = {
   },
 };
 fiat.showFuel();
-let n = prompt("Введите к")
-fiat.addFuel(50);
+// let n = prompt("Введите к")
+fiat.addFuel(5);
 fiat.showFuel();
 fiat.start();
 fiat.drive();
