@@ -24,6 +24,9 @@ let fiat = {
     } else {
       alert("Сначала запустите двигатель!");
     }
+    if (this.fuel < 0) {
+      this.fuel = 0;
+    }
   },
   showFuel: function () {
     alert("У меня в баке " + this.fuel + " литров бензина!");
@@ -32,9 +35,6 @@ let fiat = {
     this.fuel += amount;
   },
 };
-if (this.fuel < 0) {
-  this.fuel = 0;
-}
 fiat.showFuel();
 fiat.addFuel(5);
 fiat.showFuel();
