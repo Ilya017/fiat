@@ -2,7 +2,7 @@ let fiat = {
   make: "Fiat",
   model: "500",
   year: 1957,
-  color: "Blue",
+  color: "Синий",
   passengers: 2,
   mileage: 88000,
   started: false,
@@ -34,6 +34,9 @@ let fiat = {
   addFuel: function (amount) {
     amount = prompt("Введите кол-во бензина");
     this.fuel += amount;
+  },
+  toString: function() {
+    return 'Автомобиль: ' + this.make + ' Год: ' + this.year + ' Цвет: ' + this.color + ' Пассажиров: ' + this.passengers;
   },
 };
 let k = 0;
