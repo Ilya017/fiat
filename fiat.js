@@ -17,7 +17,6 @@ let fiat = {
     if (this.fuel <= 0) {
       alert("!!!");
       this.started = false;
-      this.fuel = 0;
     }
     if (this.started) {
       alert("Бип!");
@@ -33,7 +32,9 @@ let fiat = {
     this.fuel += amount;
   },
 };
-
+if (this.fuel < 0) {
+  this.fuel = 0;
+}
 fiat.showFuel();
 fiat.addFuel(5);
 fiat.showFuel();
